@@ -1,0 +1,49 @@
+{
+	"heroes": [
+		{
+			"id": 1,
+			"name": "First hero",
+			"description": "The first hero in the ranking!",
+			"element": "fire"
+		},
+		{
+			"id": 2,
+			"name": "Unknow hero",
+			"description": "Hinding in the shadows",
+			"element": "wind"
+		},
+		{
+			"id": 3,
+			"name": "Sea hero",
+			"description": "Has the ability to run on water",
+			"element": "water"
+		}
+	],
+	"filters": [
+		{
+			"name": "all",
+			"label": "All",
+			"className": "btn-outline-dark"
+		},
+		{
+			"name": "fire",
+			"label": "Fire",
+			"className": "btn-danger"
+		},
+		{
+			"name": "water",
+			"label": "Water",
+			"className": "btn-primary"
+		},
+		{
+			"name": "wind",
+			"label": "Wind",
+			"className": "btn-success"
+		},
+		{
+			"name": "earth",
+			"label": "Earth",
+			"className": "btn-secondary"
+		}
+	]
+}
