@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 
-import { heroCreated } from '../../redux/actions/heroes';
+import { heroCreated } from '../HeroesList/HeroesSlice';
 
 const HeroesAddForm = () => {
 	const [heroName, setHeroName] = useState('');

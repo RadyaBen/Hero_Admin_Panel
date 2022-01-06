@@ -4,8 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { createSelector } from 'reselect';
 
-import { fetchHeroes, heroDeleted } from '../../redux/actions/heroes';
-import HeroesListItem from "../HeroesListItem/HeroesListItem";
+import { fetchHeroes } from '../../redux/actions/heroes';
+import { heroDeleted } from './HeroesSlice';
+import HeroesListItem from '../HeroesListItem/HeroesListItem';
 import Spinner from '../Spinner/Spinner';
 
 import './HeroesList.scss';
