@@ -1,13 +1,15 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
+import store from '../../redux/helpers/store';
 
-import { filtersChanged, fetchFilters } from './FiltersSlice';
+import { filtersChanged, fetchFilters, selectAll } from './FiltersSlice';
 import Spinner from '../Spinner/Spinner';
 
 const HeroesFilters = () => {
 
-	const { filters, filtersLoadingStatus, activeFilter } = useSelector(state => state.filters);
+	const { filtersLoadingStatus, activeFilter } = useSelector(state => state.filters);
+	const filters = selectAll(store.getState());
 	const dispatch = useDispatch();
 
 	// Request to the server to receive filters and sequential change of state 
